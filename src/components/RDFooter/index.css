@@ -1,0 +1,30 @@
+footer {
+  position: relative;
+  bottom: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 4.2em;
+  background-color: #f1f1f1;
+}
+
+.footer-info {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-info a, .footer-info span {
+  font-size: 14px;
+}
+
+.footer-info a {
+  color: #7e8a98;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.footer-info span {
+  color: #97a1ac;
+  margin-left: 0.9em;
+}

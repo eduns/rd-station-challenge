@@ -1,0 +1,154 @@
+#rd-business-card-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 4em;
+  padding-inline: 8em;
+}
+
+.rd-business-card-logo-container {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+}
+
+.rd-business-card-container {
+  display: block;
+}
+
+#back-btn {
+  display: block;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  background: transparent;
+  color: #f1f3f5;
+  line-height: 150%;
+  cursor: pointer;
+  text-shadow: 0 3px 9px #212429;
+}
+
+#download-card-btn {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 150%;
+  box-sizing: border-box;
+  background: #f2bf4e;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 5px #212429AE;
+}
+
+#download-card-btn:disabled {
+  background: #cfd3d8;
+}
+
+.rd-business-card-logo-container, .rd-business-card-container {
+  flex: 1;
+}
+
+.rd-business-card-logo-container img {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+#rd-business-card {
+  display: flex;
+  width: 100%;
+  height: 210px;
+  max-width: 480px;
+  border-radius: 25px;
+  margin-top: 1em;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 20px 20px;
+  box-shadow: 0 4px 8px #212429;
+  background-color: #ffffff;
+}
+
+#rd-business-card .rd-business-card-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-inline: 30px;
+  height: 100%;
+  border-right: 3px solid #f1f3f5;
+}
+
+#rd-business-card .rd-business-card-img-container img {
+  width: 90px;
+  height: 90px;
+}
+
+.info-container {
+  width: 100%;
+  margin-left: 2em;
+}
+
+.info-container span {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.3em;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0b465b;
+}
+
+.info-container span:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.rd-business-card-container a {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  max-width: 480px;
+  background: transparent;
+  color: #f1f3f5;
+  line-height: 150%;
+  cursor: pointer;
+  text-shadow: 0 3px 9px #212429;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-top: 2.2em;
+  text-align: center;
+}
+
+@media only screen and (max-width: 850px) {
+  div#rd-business-card-page {
+    flex-direction: column;
+    padding-inline: 1em;
+    align-items: center;
+  }
+
+  div.rd-business-card-logo-container img {
+    display: none;
+  }
+
+  div#rd-business-card {
+    padding: 20px 10px;
+  }
+
+  div#rd-business-card-page div.rd-business-card-container div.rd-business-card-img-container img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (min-width: 851px) {
+  div#rd-business-card-page {
+    padding-inline: 1em;
+  }
+}
